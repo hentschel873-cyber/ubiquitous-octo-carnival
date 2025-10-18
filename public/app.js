@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
             testBtn.textContent = 'Testing...';
             
             const response = await fetch('/api/hello');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const data = await response.json();
             
             resultDiv.className = 'result show success';
