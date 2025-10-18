@@ -1,0 +1,16 @@
+{
+  "name": "ubiquitous-octo-carnival",
+  "version": "1.0.0",
+  "description": "A simple Node.js starter application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": ["starter", "nodejs", "express"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
